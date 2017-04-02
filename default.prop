@@ -29,7 +29,6 @@ debug.atrace.tags.enableflags=0
 #
 # BOOTIMAGE_BUILD_PROPERTIES
 #
-ro.bootimage.build.date=ven 31 mar 2017, 18.53.16, CEST
-ro.bootimage.build.date.utc=1490979196
-ro.bootimage.build.fingerprint=xiaomi/jdc_gemini/gemini:7.1.1/NOF27C/b--b03311853:userdebug/release-keys
+ro.bootimage.build.date=dom 2 apr 2017, 23.14.45, CEST
+ro.bootimage.build.date.utc=1491167685
 persist.sys.usb.config=adb
