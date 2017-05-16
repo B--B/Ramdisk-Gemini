@@ -3,7 +3,7 @@
 #
 ro.device.cache_dir=/data/cache
 ro.secure=0
-security.perf_harden=0
+security.perf_harden=1
 ro.allow.mock.location=0
 ro.debuggable=1
 ro.zygote=zygote64_32
@@ -28,6 +28,6 @@ debug.atrace.tags.enableflags=0
 #
 # BOOTIMAGE_BUILD_PROPERTIES
 #
-ro.bootimage.build.date=lun 8 mag 2017, 20.22.00, CEST
-ro.bootimage.build.date.utc=1494267720
+ro.bootimage.build.date=mar 16 mag 2017, 19.48.17, CEST
+ro.bootimage.build.date.utc=1494956897
 persist.sys.usb.config=adb

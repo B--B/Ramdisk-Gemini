@@ -279,6 +279,10 @@ com.qualcomm.qti.qseeproxysample               u:object_r:qseeproxysample_servic
 android.apps.IQvopService             u:object_r:iqvop_service:s0
 #line 1 "/media/b--b/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
 
+#line 1 "device/xiaomi/gemini/sepolicy/service_contexts"
+android.apps.IQfpAndroidService                u:object_r:qfp_proxy_service:s0
+#line 1 "/media/b--b/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+
 #line 1 "vendor/aosp/sepolicy/service_contexts"
 #edgegestureservice                        u:object_r:edge_gesture_service:s0
 #torch                                     u:object_r:torch_service:s0
