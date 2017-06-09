@@ -244,6 +244,6 @@ sys.panel.color            u:object_r:system_panel_prop:s0
 #line 1 "vendor/aosp/sepolicy/property_contexts"
 #service.adb.tcp.port          u:object_r:adbtcp_prop:s0
 recovery.perf.mode            u:object_r:recovery_prop:s0
-adb.secure                    u:object_r:recovery_prop:s0
+ro.adb.secure                    u:object_r:adbsecure_prop:s0
 #line 1 "/media/b--b/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
 
