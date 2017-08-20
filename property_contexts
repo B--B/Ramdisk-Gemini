@@ -97,7 +97,7 @@ config.                 u:object_r:config_prop:s0
 ro.config.              u:object_r:config_prop:s0
 dalvik.                 u:object_r:dalvik_prop:s0
 ro.dalvik.              u:object_r:dalvik_prop:s0
-#line 1 "/media/b--b/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+#line 1 "/media/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
 
 #line 1 "device/qcom/sepolicy/common/property_contexts"
 # Copyright (c) 2015-2016 Dolby Laboratories, Inc. All rights reserved.
@@ -193,7 +193,7 @@ sys.boot_mode              u:object_r:boot_mode_prop:s0
 ro.gpu.available_frequencies u:object_r:freq_prop:s0
 # NFC
 sys.nfc.nq.                u:object_r:nfc_nq_prop:s0
-#line 1 "/media/b--b/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+#line 1 "/media/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
 
 #line 1 "device/qcom/sepolicy/msm8996/property_contexts"
 # Copyright (c) 2016, The Linux Foundation. All rights reserved.
@@ -224,12 +224,12 @@ sys.nfc.nq.                u:object_r:nfc_nq_prop:s0
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ctl.qvrd                   u:object_r:ctl_qvrd_prop:s0
-#line 1 "/media/b--b/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+#line 1 "/media/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
 
 #line 1 "vendor/aosp/sepolicy/qcom/property_contexts"
 persist.dbg                   u:object_r:radio_prop:s0
 persist.data                  u:object_r:radio_prop:s0
-#line 1 "/media/b--b/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+#line 1 "/media/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
 
 #line 1 "device/xiaomi/gemini/sepolicy/property_contexts"
 service.soundcard.         u:object_r:audio_prop:s0
@@ -239,11 +239,11 @@ ro.sys.oem.sno             u:object_r:system_radio_prop:s0
 sys.fake_bs_flag0          u:object_r:system_radio_prop:s0
 sys.fake_bs_flag1          u:object_r:system_radio_prop:s0
 sys.panel.                 u:object_r:system_panel_prop:s0
-#line 1 "/media/b--b/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+#line 1 "/media/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
 
 #line 1 "vendor/aosp/sepolicy/property_contexts"
 #service.adb.tcp.port          u:object_r:adbtcp_prop:s0
 recovery.perf.mode            u:object_r:recovery_prop:s0
 ro.adb.secure                    u:object_r:adbsecure_prop:s0
-#line 1 "/media/b--b/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
+#line 1 "/media/Android/N/out/target/product/gemini/obj/ETC/sectxfile_nl_intermediates/sectxfile_nl"
 
