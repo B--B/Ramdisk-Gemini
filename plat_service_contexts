@@ -170,3 +170,11 @@ wificond                                  u:object_r:wificond_service:s0
 wifiaware                                 u:object_r:wifiaware_service:s0
 window                                    u:object_r:window_service:s0
 *                                         u:object_r:default_android_service:s0
+qti.security.seemp                             u:object_r:seemp_service:s0
+seempservice                                   u:object_r:seemp_service:s0
+qti.security.seempspa                          u:object_r:seemp_service:s0
+cneservice                                     u:object_r:cne_service:s0
+dpmservice                                     u:object_r:dpmservice:s0
+uce                                            u:object_r:uce_service:s0
+vendor.audio.vrservice                         u:object_r:audioserver_service:s0
+MinkBinderSvc                                  u:object_r:MinkBinderSvc:s0
