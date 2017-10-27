@@ -71,6 +71,7 @@ sys.fake_bs_flag1          u:object_r:system_radio_prop:s0
 sys.ims.                   u:object_r:qcom_ims_prop:s0
 sys.nfc.nq.                u:object_r:nfc_nq_prop:s0
 sys.panel.                 u:object_r:system_panel_prop:s0
+sys.post_boot.parsed       u:object_r:post_boot_prop:s0
 sys.usb.configfs           u:object_r:sys_usb_configfs_prop:s0
 sys.usb.controller         u:object_r:sys_usb_controller_prop:s0
 sys.usb.tethering          u:object_r:sys_usb_tethering_prop:s0
