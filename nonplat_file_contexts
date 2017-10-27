@@ -421,6 +421,7 @@
 /sys/bus/spmi/devices(/.*)?		u:object_r:sysfs_spmi_dev:s0
 /sys/devices/f9a55000.*/power_supply/usb(/.*)?		u:object_r:sysfs_usb_supply:s0
 /sys/devices/f9200000.*/power_supply/usb(/.*)?		u:object_r:sysfs_usb_supply:s0
+/sys/kernel/debug/kgsl(/.*)?		u:object_r:debugfs_kgsl:s0
 /data/vendor/qdmastats(/.*)?		u:object_r:qdma_data_file:s0
 /dev/socket/qmux_audio(/.*)?		u:object_r:qmuxd_socket:s0
 /dev/socket/qmux_radio(/.*)?		u:object_r:qmuxd_socket:s0
@@ -594,6 +595,8 @@
 /data/vendor/qti-logkit/socket-privileged(/.*)?		u:object_r:qti_logkit_priv_socket:s0
 /sys/devices/virtual/xt_hardidletimer/timers(/.*)?		u:object_r:sysfs_data:s0
 /sys/devices/soc/75ba000\.i2c/i2c-12/12-0020/input/input[0-9]+/reversed_keys		u:object_r:proc_touchpanel:s0
+/system/vendor/bin/hw/android\.hardware\.power@1\.1-service.msm8996		u:object_r:hal_power_default_exec:s0
+/system/vendor/bin/hw/android\.hardware\.dumpstate@1\.0-service.msm8996		u:object_r:hal_dumpstate_impl_exec:s0
 /dev/ipa		u:object_r:ipa_dev:s0
 /dev/pta		u:object_r:pta_device:s0
 /dev/qce		u:object_r:qce_device:s0
@@ -693,6 +696,7 @@
 /dev/system_health_monitor		u:object_r:system_health_monitor_device:s0
 /dev/socket/ipacm_log_file		u:object_r:ipacm_socket:s0
 /dev/socket/msm_irqbalance		u:object_r:msm_irqbalance_socket:s0
+/sys/kernel/debug/rpm_stats		u:object_r:debugfs_rpm:s0
 /dev/socket/wififtmd_server		u:object_r:wififtmd_socket:s0
 /sys/kernel/dload/emmc_dload		u:object_r:sysfs_emmc_dload:s0
 /sys/kernel/hbtp/display_pwr		u:object_r:hbtp_kernel_sysfs:s0
@@ -707,6 +711,7 @@
 /dev/block/bootdevice/by-name/ssd		u:object_r:ssd_device:s0
 /dev/block/bootdevice/by-name/fsc		u:object_r:modem_efs_partition_device:s0
 /dev/block/bootdevice/by-name/dip		u:object_r:dip_device:s0
+/sys/kernel/debug/rpm_master_stats		u:object_r:debugfs_rpm:s0
 /data/vendor/location/mq/alarm_svc		u:object_r:location_socket:s0
 /dev/block/bootdevice/by-name/misc		u:object_r:misc_block_device:s0
 /dev/block/bootdevice/by-name/mdtp		u:object_r:mdtp_device:s0
