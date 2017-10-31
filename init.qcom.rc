@@ -329,6 +329,7 @@ on post-fs-data
     mkdir /data/audio_cal 0771 system system
 
     # Create the directories used by the Wireless subsystem
+    mkdir /data/vendor/wifi 0770 wifi wifi
     mkdir /data/misc/wifi 0770 wifi wifi
     mkdir /data/misc/wifi/sockets 0770 wifi wifi
     mkdir /data/misc/wifi/wpa_supplicant 0770 wifi wifi
@@ -452,7 +453,6 @@ on property:sys.boot_completed=1
     write /proc/sys/kernel/sched_boost 0
     # Update foreground and background cpusets
     write /dev/cpuset/foreground/cpus 0-2
-    write /dev/cpuset/foreground/boost/cpus 0-2
     write /dev/cpuset/background/cpus 0
     write /dev/cpuset/system-background/cpus 0-2
     write /dev/cpuset/top-app/cpus 0-3
