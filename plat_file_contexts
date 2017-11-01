@@ -145,6 +145,7 @@
 /data/ota_package(/.*)?		u:object_r:ota_package_file:s0
 /data/unencrypted(/.*)?		u:object_r:unencrypted_data_file:s0
 /data/misc/dhcp-6.8.2(/.*)?		u:object_r:dhcp_data_file:s0
+/data/system/theme(/.*)?		u:object_r:theme_data_file:s0
 /data/misc/profman(/.*)?		u:object_r:profman_dump_data_file:s0
 /data/cache/backup(/.*)?		u:object_r:cache_private_backup_file:s0
 /data/nativetest64(/.*)?		u:object_r:nativetest_data_file:s0
@@ -341,9 +342,9 @@
 /system/bin/drmserver		u:object_r:drmserver_exec:s0
 /system/bin/dumpstate		u:object_r:dumpstate_exec:s0
 /system/bin/fsck\.f2fs		--	u:object_r:fsck_exec:s0
-/system/bin/dun-server		u:object_r:dun-server_exec:s0
-/system/bin/smcinvoked		u:object_r:smcinvoke_daemon_exec:s0
 /system/bin/qvrservice		u:object_r:qvrd_exec:s0
+/system/bin/smcinvoked		u:object_r:smcinvoke_daemon_exec:s0
+/system/bin/dun-server		u:object_r:dun-server_exec:s0
 /dev/socket/qvrservice		u:object_r:qvrd_socket:s0
 /dev/socket/dpmwrapper		u:object_r:dpmwrapper_socket:s0
 /dev/socket/rild-debug		u:object_r:rild_debug_socket:s0
