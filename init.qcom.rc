@@ -85,6 +85,12 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys4/restart_level "related"
     write /sys/bus/msm_subsys/devices/subsys5/restart_level "related"
 
+    # Access permission for secure touch
+    chmod 0660 /sys/devices/soc/75ba000.i2c/i2c-12/12-0020/secure_touch_enable
+    chmod 0440 /sys/devices/soc/75ba000.i2c/i2c-12/12-0020/secure_touch
+    chown system drmrpc /sys/devices/soc/75ba000.i2c/i2c-12/12-0020/secure_touch_enable
+    chown system drmrpc /sys/devices/soc/75ba000.i2c/i2c-12/12-0020/secure_touch
+
 on boot
     # from init.power.sh
     # disable thermal hotplug to switch governor
@@ -134,6 +140,8 @@ on boot
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.boost 0
     write /dev/stune/top-app/schedtune.prefer_idle 1
+    write /dev/stune/rt/schedtune.boost 20
+    write /dev/stune/rt/schedtune.prefer_idle 1
 
     # Enable sched boost
     write /proc/sys/kernel/sched_boost 1
@@ -153,12 +161,6 @@ on boot
     chown system system /sys/devices/soc/soc:fpc_fpc1020/enable_key_events
     chown system system /sys/devices/soc/soc:fpc_fpc1020/enable_wakeup
     chown system system /sys/devices/soc/soc:fpc_fpc1020/proximity_state
-
-    # Access permission for secure touch
-    chmod 0660 /sys/devices/soc/75ba000.i2c/i2c-12/12-0020/secure_touch_enable
-    chmod 0440 /sys/devices/soc/75ba000.i2c/i2c-12/12-0020/secure_touch
-    chown system drmrpc /sys/devices/soc/75ba000.i2c/i2c-12/12-0020/secure_touch_enable
-    chown system drmrpc /sys/devices/soc/75ba000.i2c/i2c-12/12-0020/secure_touch
 
     # Access permission for smartPA
     chmod 0666 /dev/i2c-3
@@ -292,7 +294,6 @@ on fs
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
     mount_all fstab.qcom
-    swapon_all fstab.qcom
 
 on post-fs-data
     chown system system /dev/sysmatdrv
@@ -448,6 +449,8 @@ on property:sys.post_boot.parsed=1
     start perfd
 
 on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
+    swapon_all fstab.qcom
     start power_sh
     # Disable boosting
     write /proc/sys/kernel/sched_boost 0
