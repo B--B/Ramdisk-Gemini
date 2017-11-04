@@ -25,7 +25,7 @@ ro.device.cache_dir=/data/cache
 #
 # BOOTIMAGE_BUILD_PROPERTIES
 #
-ro.bootimage.build.date=gio 2 nov 2017, 01.11.15, CET
-ro.bootimage.build.date.utc=1509581475
-ro.bootimage.build.fingerprint=xiaomi/jdc_gemini/gemini:8.0.0/OPD3.170816.012/9e306c9e79:userdebug/test-keys
+ro.bootimage.build.date=sab 4 nov 2017, 01.12.32, CET
+ro.bootimage.build.date.utc=1509754352
+ro.bootimage.build.fingerprint=xiaomi/jdc_gemini/gemini:8.0.0/OPD3.170816.012/d9b63c74fc:userdebug/test-keys
 persist.sys.usb.config=adb
