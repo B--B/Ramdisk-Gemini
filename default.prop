@@ -6,6 +6,7 @@ ro.secure=0
 ro.allow.mock.location=0
 ro.debuggable=1
 ro.zygote=zygote64_32
+tombstoned.max_tombstone_count=50
 dalvik.vm.image-dex2oat-Xms=64m
 dalvik.vm.image-dex2oat-Xmx=64m
 dalvik.vm.dex2oat-Xms=64m
@@ -20,12 +21,14 @@ pm.dexopt.boot=verify
 pm.dexopt.install=quicken
 pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.ab-ota=speed-profile
+pm.dexopt.inactive=verify
+pm.dexopt.shared=speed
 debug.atrace.tags.enableflags=0
 ro.device.cache_dir=/data/cache
 #
 # BOOTIMAGE_BUILD_PROPERTIES
 #
-ro.bootimage.build.date=sab 4 nov 2017, 01.12.32, CET
-ro.bootimage.build.date.utc=1509754352
-ro.bootimage.build.fingerprint=xiaomi/jdc_gemini/gemini:8.0.0/OPD3.170816.012/d9b63c74fc:userdebug/test-keys
+ro.bootimage.build.date=dom 10 dic 2017, 03.58.12, CET
+ro.bootimage.build.date.utc=1512874692
+ro.bootimage.build.fingerprint=xiaomi/jdc_gemini/gemini:8.1.0/OPM1.171019.011/01b252ddcd:userdebug/test-keys
 persist.sys.usb.config=adb
